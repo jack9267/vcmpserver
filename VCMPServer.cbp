@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VCMP Server" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="VCMP Server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DHAVE_DLFCN" />
+					<Add directory="./RakNet" />
+					<Add directory="./Main" />
+					<Add directory="./Net" />
+					<Add directory="./Defines" />
+					<Add directory="./Pools" />
+					<Add directory="./Misc" />
+					<Add directory="./TinyXML" />
+					<Add directory="./Scripting" />
+					<Add directory="./Scripting/Squirrel" />
+					<Add directory="./Scripting/Squirrel/Include" />
+					<Add directory="./Scripting/Squirrel/Include/SqPlus" />
+					<Add directory="./Net/Packets" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./RakNet" />
+					<Add directory="./Main" />
+					<Add directory="./Net" />
+					<Add directory="./Defines" />
+					<Add directory="./Pools" />
+					<Add directory="./Misc" />
+					<Add directory="./TinyXML" />
+					<Add directory="./Scripting" />
+					<Add directory="./Scripting/Squirrel" />
+					<Add directory="./Scripting/Squirrel/Include" />
+					<Add directory="./Scripting/Squirrel/Include/SqPlus" />
+					<Add directory="./Net/Packets" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="./TinyXML/Lib/libtinyxml.a" />
+					<Add library="pthread" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="VCMP Server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-DHAVE_DLFCN" />
+					<Add directory="./RakNet" />
+					<Add directory="./Main" />
+					<Add directory="./Net" />
+					<Add directory="./Defines" />
+					<Add directory="./Pools" />
+					<Add directory="./Misc" />
+					<Add directory="./TinyXML" />
+					<Add directory="./Scripting" />
+					<Add directory="./Scripting/Squirrel" />
+					<Add directory="./Scripting/Squirrel/Include" />
+					<Add directory="./Scripting/Squirrel/Include/SqPlus" />
+					<Add directory="./Net/Packets" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="./RakNet" />
+					<Add directory="./Main" />
+					<Add directory="./Net" />
+					<Add directory="./Defines" />
+					<Add directory="./Pools" />
+					<Add directory="./Misc" />
+					<Add directory="./TinyXML" />
+					<Add directory="./Scripting" />
+					<Add directory="./Scripting/Squirrel" />
+					<Add directory="./Scripting/Squirrel/Include" />
+					<Add directory="./Scripting/Squirrel/Include/SqPlus" />
+					<Add directory="./Net/Packets" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="./TinyXML/Lib/tinyxml" />
+					<Add library="pthread" />
+					<Add library="dl" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="Defines/ConsoleDefs.h" />
+		<Unit filename="Defines/CoreDefs.h" />
+		<Unit filename="Defines/NetDefs.h" />
+		<Unit filename="Defines/SharedDefs.h" />
+		<Unit filename="Main/ConfigLoader.cpp" />
+		<Unit filename="Main/ConfigLoader.h" />
+		<Unit filename="Main/Console.cpp" />
+		<Unit filename="Main/Console.h" />
+		<Unit filename="Main/Main.cpp" />
+		<Unit filename="Main/Main.h" />
+		<Unit filename="Misc/BanList.cpp" />
+		<Unit filename="Misc/BanList.h" />
+		<Unit filename="Misc/Utils.cpp" />
+		<Unit filename="Misc/Utils.h" />
+		<Unit filename="Net/Net.cpp" />
+		<Unit filename="Net/Net.h" />
+		<Unit filename="Net/NetRPC.cpp" />
+		<Unit filename="Net/NetRPC.h" />
+		<Unit filename="Net/NetSends.cpp" />
+		<Unit filename="Net/NetSends.h" />
+		<Unit filename="Net/Packets/Receives/MiscRecvPackets.cpp" />
+		<Unit filename="Net/Packets/Receives/MiscRecvPackets.h" />
+		<Unit filename="Net/Packets/RecvPackets.h" />
+		<Unit filename="Net/Packets/SendPackets.h" />
+		<Unit filename="Net/Packets/Sends/MiscSendPackets.cpp" />
+		<Unit filename="Net/Packets/Sends/MiscSendPackets.h" />
+		<Unit filename="Net/Packets/Sends/PlayerSendPackets.cpp" />
+		<Unit filename="Net/Packets/Sends/PlayerSendPackets.h" />
+		<Unit filename="Net/RangedSends.cpp" />
+		<Unit filename="Net/RangedSends.h" />
+		<Unit filename="Net/Rcon.cpp" />
+		<Unit filename="Net/Rcon.h" />
+		<Unit filename="Pools/Entity.cpp" />
+		<Unit filename="Pools/Entity.h" />
+		<Unit filename="Pools/PickupPool.cpp" />
+		<Unit filename="Pools/PickupPool.h" />
+		<Unit filename="Pools/PlayerPool.cpp" />
+		<Unit filename="Pools/PlayerPool.h" />
+		<Unit filename="Pools/Pools.h" />
+		<Unit filename="Pools/RconPool.cpp" />
+		<Unit filename="Pools/RconPool.h" />
+		<Unit filename="Pools/SpawnPool.cpp" />
+		<Unit filename="Pools/SpawnPool.h" />
+		<Unit filename="Pools/VehiclePool.cpp" />
+		<Unit filename="Pools/VehiclePool.h" />
+		<Unit filename="RakNet/AES128.cpp" />
+		<Unit filename="RakNet/AES128.h" />
+		<Unit filename="RakNet/ArrayList.h" />
+		<Unit filename="RakNet/AsynchronousFileIO.cpp" />
+		<Unit filename="RakNet/AsynchronousFileIO.h" />
+		<Unit filename="RakNet/BigTypes.h" />
+		<Unit filename="RakNet/BinarySearchTree.h" />
+		<Unit filename="RakNet/BitStream.cpp" />
+		<Unit filename="RakNet/BitStream.h" />
+		<Unit filename="RakNet/CheckSum.cpp" />
+		<Unit filename="RakNet/CheckSum.h" />
+		<Unit filename="RakNet/ClientContextStruct.h" />
+		<Unit filename="RakNet/DataBlockEncryptor.cpp" />
+		<Unit filename="RakNet/DataBlockEncryptor.h" />
+		<Unit filename="RakNet/DistributedNetworkObject.cpp" />
+		<Unit filename="RakNet/DistributedNetworkObject.h" />
+		<Unit filename="RakNet/DistributedNetworkObjectHeader.h" />
+		<Unit filename="RakNet/DistributedNetworkObjectManager.cpp" />
+		<Unit filename="RakNet/DistributedNetworkObjectManager.h" />
+		<Unit filename="RakNet/DistributedNetworkObjectStub.cpp" />
+		<Unit filename="RakNet/DistributedNetworkObjectStub.h" />
+		<Unit filename="RakNet/EncodeClassName.cpp" />
+		<Unit filename="RakNet/EncodeClassName.h" />
+		<Unit filename="RakNet/ExtendedOverlappedPool.cpp" />
+		<Unit filename="RakNet/ExtendedOverlappedPool.h" />
+		<Unit filename="RakNet/GetTime.cpp" />
+		<Unit filename="RakNet/GetTime.h" />
+		<Unit filename="RakNet/HuffmanEncodingTree.cpp" />
+		<Unit filename="RakNet/HuffmanEncodingTree.h" />
+		<Unit filename="RakNet/HuffmanEncodingTreeFactory.cpp" />
+		<Unit filename="RakNet/HuffmanEncodingTreeFactory.h" />
+		<Unit filename="RakNet/HuffmanEncodingTreeNode.h" />
+		<Unit filename="RakNet/InternalPacket.h" />
+		<Unit filename="RakNet/InternalPacketPool.cpp" />
+		<Unit filename="RakNet/InternalPacketPool.h" />
+		<Unit filename="RakNet/LinkedList.h" />
+		<Unit filename="RakNet/MTUSize.h" />
+		<Unit filename="RakNet/Multiplayer.h" />
+		<Unit filename="RakNet/NetworkObject.cpp" />
+		<Unit filename="RakNet/NetworkObject.h" />
+		<Unit filename="RakNet/NetworkTypes.cpp" />
+		<Unit filename="RakNet/NetworkTypes.h" />
+		<Unit filename="RakNet/PacketEnumerations.h" />
+		<Unit filename="RakNet/PacketPool.cpp" />
+		<Unit filename="RakNet/PacketPool.h" />
+		<Unit filename="RakNet/PacketPriority.h" />
+		<Unit filename="RakNet/Queue.h" />
+		<Unit filename="RakNet/QueueLinkedList.h" />
+		<Unit filename="RakNet/RPCNode.cpp" />
+		<Unit filename="RakNet/RPCNode.h" />
+		<Unit filename="RakNet/RSACrypt.h" />
+		<Unit filename="RakNet/RakClient.cpp" />
+		<Unit filename="RakNet/RakClient.h" />
+		<Unit filename="RakNet/RakClientInterface.h" />
+		<Unit filename="RakNet/RakNetStatistics.cpp" />
+		<Unit filename="RakNet/RakNetStatistics.h" />
+		<Unit filename="RakNet/RakNetworkFactory.cpp" />
+		<Unit filename="RakNet/RakNetworkFactory.h" />
+		<Unit filename="RakNet/RakPeer.cpp" />
+		<Unit filename="RakNet/RakPeer.h" />
+		<Unit filename="RakNet/RakPeerInterface.h" />
+		<Unit filename="RakNet/RakServer.cpp" />
+		<Unit filename="RakNet/RakServer.h" />
+		<Unit filename="RakNet/RakServerInterface.h" />
+		<Unit filename="RakNet/Rand.cpp" />
+		<Unit filename="RakNet/Rand.h" />
+		<Unit filename="RakNet/ReliabilityLayer.cpp" />
+		<Unit filename="RakNet/ReliabilityLayer.h" />
+		<Unit filename="RakNet/SHA1.cpp" />
+		<Unit filename="RakNet/SHA1.h" />
+		<Unit filename="RakNet/SimpleMutex.cpp" />
+		<Unit filename="RakNet/SimpleMutex.h" />
+		<Unit filename="RakNet/SocketLayer.cpp" />
+		<Unit filename="RakNet/SocketLayer.h" />
+		<Unit filename="RakNet/StringCompressor.cpp" />
+		<Unit filename="RakNet/StringCompressor.h" />
+		<Unit filename="RakNet/Types.h" />
+		<Unit filename="Scripting/Scripting.cpp" />
+		<Unit filename="Scripting/Scripting.h" />
+		<Unit filename="Scripting/Squirrel/Functions/SQMiscFuncs.cpp" />
+		<Unit filename="Scripting/Squirrel/Functions/SQMiscFuncs.h" />
+		<Unit filename="Scripting/Squirrel/Functions/SQPlayerFuncs.cpp" />
+		<Unit filename="Scripting/Squirrel/Functions/SQPlayerFuncs.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlus.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusCallTemplates.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusConst.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusFunctionCallImpl.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusOCharBuf.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusOCharBuf.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusOverload.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusSetup.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusSmartPointer.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusTypeMask.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusUtf8.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SqPlusUtf8.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelBindingsUtils.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelBindingsUtils.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelObject.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelObject.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelVM.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/SquirrelVM.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/sqplus.h" />
+		<Unit filename="Scripting/Squirrel/Include/SqPlus/sqplusWin32.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqapi.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqarray.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqbaselib.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqclass.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqclass.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqclosure.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqcompiler.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqcompiler.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqdebug.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqfuncproto.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqfuncstate.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqfuncstate.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqlexer.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqlexer.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqmem.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqmod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Scripting/Squirrel/Include/sqmod.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqobject.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqobject.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqopcodes.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqpcheader.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstate.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstate.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdaux.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdaux.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdblob.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdblob.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdblobimpl.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdio.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdio.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdmath.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdmath.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdrex.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdstream.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdstream.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdstring.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdstring.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdsystem.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqstdsystem.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqstring.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqtable.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqtable.h" />
+		<Unit filename="Scripting/Squirrel/Include/squirrel.h" />
+		<Unit filename="Scripting/Squirrel/Include/squserdata.h" />
+		<Unit filename="Scripting/Squirrel/Include/squtils.h" />
+		<Unit filename="Scripting/Squirrel/Include/sqvm.cpp" />
+		<Unit filename="Scripting/Squirrel/Include/sqvm.h" />
+		<Unit filename="Scripting/Squirrel/SquirrelFuncs.cpp" />
+		<Unit filename="Scripting/Squirrel/SquirrelFuncs.h" />
+		<Unit filename="Scripting/Squirrel/SquirrelMain.cpp" />
+		<Unit filename="Scripting/Squirrel/SquirrelMain.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

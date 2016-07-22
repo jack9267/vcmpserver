@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RudeConfig" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="Lib\libRudeConfigd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Debug Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+				</Compiler>
+			</Target>
+			<Target title="Debug x64">
+				<Option output="Lib\libRudeConfigd64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Win32\Debug x64" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-W" />
+					<Add option="-O0" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="Lib\libRudeConfig" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Release Win32" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-W" />
+				</Compiler>
+			</Target>
+			<Target title="Release x64">
+				<Option output="Lib\libRudeConfig64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="Win32\Release x64" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_LIB" />
+					<Add option="-W" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="src\AbstractData.cpp" />
+		<Unit filename="src\AbstractData.h" />
+		<Unit filename="src\AbstractOrganiser.cpp" />
+		<Unit filename="src\AbstractOrganiser.h" />
+		<Unit filename="src\AbstractParser.cpp" />
+		<Unit filename="src\AbstractParser.h" />
+		<Unit filename="src\AbstractWriter.cpp" />
+		<Unit filename="src\AbstractWriter.h" />
+		<Unit filename="src\Base64Encoder.cpp" />
+		<Unit filename="src\Base64Encoder.h" />
+		<Unit filename="src\Comment.cpp" />
+		<Unit filename="src\Comment.h" />
+		<Unit filename="src\ConfigImpl.cpp" />
+		<Unit filename="src\ConfigImpl.h" />
+		<Unit filename="src\DataLine.cpp" />
+		<Unit filename="src\DataLine.h" />
+		<Unit filename="src\File.cpp" />
+		<Unit filename="src\File.h" />
+		<Unit filename="src\KeyValue.cpp" />
+		<Unit filename="src\KeyValue.h" />
+		<Unit filename="src\ParserJuly2004.cpp" />
+		<Unit filename="src\ParserJuly2004.h" />
+		<Unit filename="src\RealOrganiser.cpp" />
+		<Unit filename="src\RealOrganiser.h" />
+		<Unit filename="src\rudeconfig.cpp" />
+		<Unit filename="src\rudeconfig.h" />
+		<Unit filename="src\Section.cpp" />
+		<Unit filename="src\Section.h" />
+		<Unit filename="src\WhiteSpace.cpp" />
+		<Unit filename="src\WhiteSpace.h" />
+		<Unit filename="src\Writer.cpp" />
+		<Unit filename="src\Writer.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
